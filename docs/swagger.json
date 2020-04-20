@@ -1,0 +1,118 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "license": {}
+    },
+    "paths": {
+        "/hello/": {
+            "get": {
+                "description": "get data",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "string valid",
+                        "name": "dataInfo",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "hello",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/job/sub": {
+            "post": {
+                "description": "submit lsf job",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "string valid",
+                        "name": "jobName",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "string valid",
+                        "name": "jobinfo",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "string valid",
+                        "name": "jobData",
+                        "in": "query"
+                    }
+                ]
+            }
+        },
+        "/user/add": {
+            "post": {
+                "description": "add user",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "int valid",
+                        "name": "Id",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "string valid",
+                        "name": "Name",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "int valid",
+                        "name": "Age",
+                        "in": "query"
+                    }
+                ]
+            }
+        },
+        "/user/getUserList": {
+            "get": {
+                "description": "get data",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "userList",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

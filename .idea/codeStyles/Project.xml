@@ -1,0 +1,22 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <ScalaCodeStyleSettings>
+      <option name="alwaysUsedImports">
+        <array>
+          <option value="com.hollysys.dc.connector.sink.InfluxDBSink.InfluxDBConfig" />
+          <option value="org.apache.flink.streaming.api.scala.StreamExecutionEnvironment" />
+          <option value="org.apache.hadoop.hbase.HBaseConfiguration" />
+          <option value="org.apache.spark.sql.hive" />
+        </array>
+      </option>
+    </ScalaCodeStyleSettings>
+    <codeStyleSettings language="Scala">
+      <option name="SPACE_WITHIN_BRACKETS" value="true" />
+    </codeStyleSettings>
+    <codeStyleSettings language="go">
+      <indentOptions>
+        <option name="SMART_TABS" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
+  </code_scheme>
+</component>
