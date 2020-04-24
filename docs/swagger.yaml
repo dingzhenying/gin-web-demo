@@ -5,16 +5,16 @@ paths:
   /hello/:
     get:
       consumes:
-      - application/json
+        - application/json
       description: get data
       parameters:
-      - description: string valid
-        in: query
-        name: dataInfo
-        required: true
-        type: string
+        - description: string valid
+          in: query
+          name: dataInfo
+          required: true
+          type: string
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: hello
@@ -23,50 +23,50 @@ paths:
   /job/sub:
     post:
       consumes:
-      - application/json
+        - application/json
       description: submit lsf job
       parameters:
-      - description: string valid
-        in: query
-        name: jobName
-        type: string
-      - description: string valid
-        in: query
-        name: jobinfo
-        type: string
-      - description: string valid
-        in: query
-        name: jobData
-        type: string
+        - description: string valid
+          in: query
+          name: jobName
+          type: string
+        - description: string valid
+          in: query
+          name: jobinfo
+          type: string
+        - description: string valid
+          in: query
+          name: jobData
+          type: string
       produces:
-      - application/json
+        - application/json
   /user/add:
     post:
       consumes:
-      - application/json
+        - application/json
       description: add user
       parameters:
-      - description: int valid
-        in: query
-        name: Id
-        type: integer
-      - description: string valid
-        in: query
-        name: Name
-        type: string
-      - description: int valid
-        in: query
-        name: Age
-        type: integer
+        - description: int valid
+          in: query
+          name: Id
+          type: integer
+        - description: string valid
+          in: query
+          name: Name
+          type: string
+        - description: int valid
+          in: query
+          name: Age
+          type: integer
       produces:
-      - application/json
+        - application/json
   /user/getUserList:
     get:
       consumes:
-      - application/json
+        - application/json
       description: get data
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: userList
